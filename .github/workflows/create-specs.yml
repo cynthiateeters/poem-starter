@@ -4,63 +4,51 @@ on:
     types: [opened]
 
 jobs:
-  discover-specs:
+  create-all-issues:
     if: github.event.issue.title == 'Initialize Specs'
-    runs-on: ubuntu-latest
-    outputs:
-      specs: ${{ steps.set-matrix.outputs.specs }}
-    steps:
-      - uses: actions/checkout@v4
-      
-      - name: Discover specification files
-        id: set-matrix
-        run: |
-          # Find all .md files in issue-specs directory
-          FILES=$(find .github/issue-specs -name "*.md" -type f | sort)
-          
-          # Convert to JSON array for matrix
-          JSON_ARRAY="["
-          FIRST=true
-          for file in $FILES; do
-            if [ "$FIRST" = false ]; then
-              JSON_ARRAY+=","
-            fi
-            # Extract just the filename
-            FILENAME=$(basename "$file")
-            JSON_ARRAY+="\"$file\""
-            FIRST=false
-          done
-          JSON_ARRAY+="]"
-          
-          echo "specs=$JSON_ARRAY" >> $GITHUB_OUTPUT
-          echo "Found specification files: $JSON_ARRAY"
-
-  create-issues:
-    needs: discover-specs
-    if: needs.discover-specs.outputs.specs != '[]'
     runs-on: ubuntu-latest
     permissions:
       issues: write
-    strategy:
-      matrix:
-        spec-file: ${{ fromJson(needs.discover-specs.outputs.specs) }}
     steps:
       - uses: actions/checkout@v4
       
-      - name: Create issue from ${{ matrix.spec-file }}
+      - name: Create Spec 1 - Professional Tooling Setup
         uses: JasonEtco/create-an-issue@v2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          filename: ${{ matrix.spec-file }}
-
-  close-trigger:
-    needs: create-issues
-    if: always()
-    runs-on: ubuntu-latest
-    permissions:
-      issues: write
-    steps:
+          filename: .github/issue-specs/01-core-tooling.md
+      
+      - name: Wait briefly for issue number sequencing
+        run: sleep 2
+      
+      - name: Create Spec 2 - Semantic HTML Structure
+        uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          filename: .github/issue-specs/02-core-html.md
+      
+      - name: Wait briefly for issue number sequencing
+        run: sleep 2
+      
+      - name: Create Spec 3 - CSS Typography & Layout
+        uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          filename: .github/issue-specs/03-core-css.md
+      
+      - name: Wait briefly for issue number sequencing
+        run: sleep 2
+      
+      - name: Create Spec 4 - Documentation & Deployment
+        uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          filename: .github/issue-specs/04-core-documentation.md
+      
       - name: Close trigger issue
         uses: peter-evans/close-issue@v3
         with:
