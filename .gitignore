@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment files
+.env
+.env.local
+
+# Build files
+dist/
+build/
+
+# Keep evidence folders even if empty
+!docs/evidence/
+!docs/evidence/**/
