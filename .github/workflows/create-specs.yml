@@ -12,6 +12,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
+      - name: Create required labels if they don't exist
+        run: |
+          gh label create "status:ready-for-review" --color f97316 --description "Ready for instructor review" || true
+          gh label create "status:complete" --color 22c55e --description "Specification completed" || true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
       - name: Create Spec 1 - Professional Tooling Setup
         uses: JasonEtco/create-an-issue@v2
         env:
