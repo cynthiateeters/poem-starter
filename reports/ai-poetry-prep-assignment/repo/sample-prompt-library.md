@@ -1,12 +1,23 @@
 # Sample AI Prompts Library for Students
 
+**Reality Note:** AI responses will reflect certain biases (favoring Western, male, older authors for poems) and may occasionally provide incorrect information. Always verify important details and push back if suggestions seem overly complex.
+
+## Pro tip: Start fresh conversations
+
+AI doesn't remember everything from long conversations. For each phase, consider starting a fresh chat to avoid confusion.
+
+## Remember: Trust but verify
+- Always search online to confirm your poem exists and is truly public domain
+- If AI's suggestions seem complex, ask for simpler alternatives
+- When something feels wrong, trust your instinct and push back
+
 **Purpose:** This document provides example prompts to help students understand effective AI collaboration techniques. Use these as starting points, but personalize them with your specific context and needs.
 
 ## Phase 1: Poem discovery prompts
 
 ### Initial context-building prompt template
 
-```
+``` text
 I'm a web development student working on a Poetry Interpretation website project that has specific technical requirements:
 
 Technical Requirements:
@@ -23,41 +34,42 @@ Personal Context:
 - I'm drawn to [specific themes, emotions, or literary styles]
 - For poem length, I prefer [short/medium/long poems] because [reason]
 
-Constraints:
+CRITICAL CONSTRAINTS:
+- MUST be PUBLIC DOMAIN (no copyright restrictions)
+- This means poems by authors who died over 70 years ago, or poems explicitly released to public domain
 - Must be appropriate for academic display
-- Should be public domain or have clear attribution guidelines
 - Needs to work well with semantic HTML structure
 - Should have clear stanza/line break structure for CSS styling
 
-Can you suggest 5-7 poems that would work well for this project, considering both my personal preferences and the technical requirements? For each suggestion, briefly explain why it matches my criteria.
-```
+Can you suggest 5-7 PUBLIC DOMAIN poems that would work well for this project, considering both my personal preferences and the technical requirements? For each suggestion, briefly explain why it matches my criteria AND confirm the public domain status.
+``` text
 
 ### Follow-up refinement prompts
 
 **To narrow down by theme:**
-```
-Of the poems you suggested, I'm most drawn to [specific theme/mood]. Can you suggest 2-3 additional poems that explore [specific theme] but might offer different structural or visual opportunities for web design?
-```
+``` text
+Of the PUBLIC DOMAIN poems you suggested, I'm most drawn to [specific theme/mood]. Can you suggest 2-3 additional PUBLIC DOMAIN poems that explore [specific theme] but might offer different structural or visual opportunities for web design? Please confirm these are also public domain.
+``` text
 
 **To understand technical implications:**
-```
+``` text
 For the poem "[Title]" by [Author], can you help me understand:
 1. How many stanzas and what's the typical line length?
 2. Are there any unique structural elements (refrains, unusual line breaks, etc.)?
 3. What semantic HTML challenges might this poem present?
 4. What opportunities does this structure create for interesting CSS design?
-```
+``` text
 
 **To explore creative connections:**
-```
+``` text
 I'm interested in "[Title]" by [Author]. What visual design elements (colors, typography styles, layout approaches) would complement this poem's mood and meaning? Consider both the emotional tone and any imagery or themes in the text.
-```
+``` text
 
 ## Phase 2: HTML structure planning prompts
 
 ### Initial semantic structure prompt
 
-```
+``` text
 I've selected "[Poem Title]" by [Author] for my poetry website project. Here's the poem:
 
 [Include the full poem text]
@@ -77,11 +89,11 @@ Can you help me plan:
 5. What heading levels would create the best accessibility and SEO structure
 
 Please provide a basic HTML structure outline with explanations for your choices.
-```
+``` text
 
 ### Accessibility analysis prompt
 
-```
+``` text
 Here's my planned HTML structure for my poetry website:
 
 [Paste your HTML structure]
@@ -95,11 +107,11 @@ Can you review this structure for WCAG AA accessibility compliance? Specifically
 6. How can I ensure keyboard navigation works well?
 
 Also, what accessibility testing should I plan to do when I implement this?
-```
+``` text
 
 ### Responsive structure prompt
 
-```
+``` text
 My poem has [number] stanzas with varying line lengths. I need the HTML structure to support responsive design from 320px to 1920px viewports.
 
 Questions:
@@ -110,13 +122,13 @@ Questions:
 5. How should I structure any navigation elements to work across all screen sizes?
 
 Can you suggest specific HTML patterns that will give me maximum flexibility for responsive CSS design?
-```
+``` text
 
 ## Phase 3: CSS design strategy prompts
 
 ### Design philosophy development prompt
 
-```
+``` text
 I've chosen "[Poem Title]" by [Author] for my website project. Here's what the poem is about:
 
 [Brief description of poem's themes, mood, imagery, and emotional tone]
@@ -130,18 +142,18 @@ I need to develop a design philosophy that connects the poem's meaning to visual
 5. How can I balance honoring the poem's character with meeting modern web accessibility standards?
 
 Can you help me draft a 2-3 paragraph design philosophy that connects these literary elements to specific visual design decisions?
-```
+``` text
 
 ### Typography planning prompt
 
-```
+``` text
 Based on my design philosophy for "[Poem Title]":
 
 [Include your design philosophy from previous conversation]
 
 I need to select two font families - one for headings and one for body text (including the poem). Requirements:
 - Must load reliably across all browsers
-- Should support the poem's emotional tone and my design philosophy  
+- Should support the poem's emotional tone and my design philosophy
 - Heading font can be more distinctive, body font must prioritize readability
 - Need to work well together as a pairing
 - Should meet accessibility requirements (good contrast, readable at small sizes)
@@ -153,11 +165,11 @@ Can you suggest 3-4 font pairing options with:
 4. How to establish proper typographic hierarchy with these fonts
 
 Also, what font sizes and line heights would work best for poetry display?
-```
+``` text
 
 ### Color palette development prompt
 
-```
+``` text
 I need to develop a color palette for my poetry website based on this design philosophy:
 
 [Include your design philosophy]
@@ -176,15 +188,15 @@ Can you suggest 2-3 different color palette options with:
 5. Any seasonal or cultural considerations I should be aware of
 
 Also, what tools should I use to verify color accessibility before implementing?
-```
+``` text
 
 ### Layout and responsive strategy prompt
 
-```
+``` text
 I need to plan the CSS layout for my poetry website. Here are my constraints:
 
 Technical Requirements:
-- Content max-width: 600-800px  
+- Content max-width: 600-800px
 - Must be centered in viewport
 - Responsive across 320px-1920px viewports
 - No horizontal scroll at any size
@@ -207,14 +219,14 @@ Can you help me plan:
 6. Performance considerations for responsive design
 
 What specific CSS techniques would work best for this poetry layout?
-```
+``` text
 
 ## Conversation improvement techniques
 
 ### Getting better AI responses
 
 **Add specific context:**
-- Instead of: "Help me pick a poem"  
+- Instead of: "Help me pick a poem"
 - Try: "Help me pick a poem that fits my technical constraints and personal aesthetic preferences: [specific details]"
 
 **Ask for multiple options:**
@@ -232,25 +244,25 @@ What specific CSS techniques would work best for this poetry layout?
 ### When AI responses aren't helpful
 
 **If AI suggests something too generic:**
-```
+``` text
 That suggestion feels too generic for my specific poem. Can you give me more targeted advice that specifically addresses [your poem's unique characteristics]?
-```
+``` text
 
 **If AI misses your constraints:**
-```
+``` text
 I notice your suggestion doesn't account for [specific constraint]. Can you revise your recommendation considering that I need to [specific requirement]?
-```
+``` text
 
 **If you need more technical detail:**
-```
+``` text
 Can you provide more specific implementation guidance? I need concrete details about [colors/fonts/measurements/etc.] rather than general principles.
-```
+``` text
 
 ### Follow-up question patterns
 
 - "What would happen if I modified that approach by [specific change]?"
 - "How would that work differently on mobile vs. desktop?"
-- "What accessibility considerations should I keep in mind with that approach?"  
+- "What accessibility considerations should I keep in mind with that approach?"
 - "Can you suggest 2-3 alternatives that would create a different mood?"
 - "What are the potential challenges with implementing that suggestion?"
 
@@ -258,7 +270,7 @@ Can you provide more specific implementation guidance? I need concrete details a
 
 **Too vague:** "Help me design a website" → Be specific about your poem, requirements, and goals
 
-**No context:** Starting without explaining your project requirements and constraints  
+**No context:** Starting without explaining your project requirements and constraints
 
 **Accepting first response:** Always ask follow-up questions to refine and improve suggestions
 

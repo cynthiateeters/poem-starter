@@ -28,7 +28,7 @@ Instead of complex documentation, you'll create just **two simple documents:**
 - Your selected poem and why you chose it
 - HTML guidelines (5-10 bullet points)
 - CSS guidelines (5-10 bullet points)
-- Screenshots of 2-3 key AI conversations
+- Key AI conversations (copy-paste your best prompts and responses)
 
 ### 2. reflection.md
 
@@ -40,7 +40,9 @@ Instead of complex documentation, you'll create just **two simple documents:**
 
 ### Phase 1: Poem discovery with AI
 
-Use AI to find a poem that interests you personally, works well for web presentation, has clear structure, and is appropriate for academic display.
+Use AI to find a **PUBLIC DOMAIN** poem that interests you personally, works well for web presentation, has clear structure, and is appropriate for academic display.
+
+**IMPORTANT:** You must use a public domain poem (no copyright restrictions). This means poems by authors who died over 70 years ago, or poems explicitly released to public domain.
 
 **Key learning:** How to give AI context about your needs and iterate to better results.
 
@@ -65,20 +67,24 @@ Write a brief reflection on how your AI prompting improved, which suggestions yo
 ### Phase 1 starter prompt
 
 ``` text
-I'm a web development student looking for a poem to build a website around. I enjoy [your interests] and prefer [aesthetic style]. The poem needs clear structure for HTML markup and should be 15-30 lines. Can you suggest 3-5 poems and explain why each would work well for a web project?
-```
+I'm a web development student looking for a PUBLIC DOMAIN poem to build a website around. I enjoy [your interests] and prefer [aesthetic style]. The poem needs clear structure for HTML markup and should be 15-30 lines. 
+
+IMPORTANT: I can only use poems that are in the public domain (no copyright restrictions). This means poems by authors who died over 70 years ago, or poems explicitly released to public domain.
+
+Can you suggest 3-5 PUBLIC DOMAIN poems and explain why each would work well for a web project?
+``` text
 
 ### Phase 2 starter prompt
 
 ``` text
 I've chosen "[poem title]" for my website. Can you help me create simple HTML guidelines for structuring this poem? I need to know which semantic elements to use and how to handle the stanzas and line breaks. Keep it practical - just tell me what tags to use where.
-```
+``` text
 
 ### Phase 3 starter prompt
 
 ``` text
 For my poem "[title]" which is about [brief description], I need simple CSS guidelines. What colors would match the mood? What font pairings would work? How much spacing between stanzas? Give me practical starting points, not complex systems.
-```
+``` text
 
 ## Success indicators
 
@@ -111,6 +117,32 @@ Trust your instinct. If something seems off or too complex, ask AI for a simpler
 ### "My conversation with AI went nowhere"
 
 Start over with better context. Tell AI exactly what you need and what constraints you have.
+
+## AI reality checks
+
+As you work through the phases, you'll naturally discover some AI limitations. This is normal and valuable learning. Here are checkpoints to try:
+
+### Phase 1 discovery check
+- First, ask AI for 12 public domain poems with no other context
+- Make a quick tally: How many authors are male vs. female? Western vs. non-Western?
+- Then specifically ask for poems by women or non-Western authors
+- Notice how much harder AI has to work to find these?
+
+### Phase 2 fresh start check
+
+- Start a NEW conversation for HTML planning
+- Don't reference your previous poem discussion
+- Notice how you need to re-explain everything?
+
+### Phase 3 verification check
+
+- After getting CSS suggestions, search online for your poem to verify it exists
+- Check if the author/dates are correct  
+- **CRITICAL CHECK:** Verify it's actually public domain (author died 70+ years ago or explicitly public domain)
+- If not public domain, you must choose a different poem!
+- If AI's CSS suggestions seem overly complex, ask: "Can you simplify this to just the essentials?"
+
+Document any surprises in your planning document - this awareness will make you a better AI collaborator.
 
 ## Getting help
 

@@ -8,6 +8,11 @@
 
 **Poem:** "[Title]" by [Author]
 
+**Public domain verification:**
+```
+[Confirm this is public domain - author died 70+ years ago or explicitly public domain. Include death year if known.]
+```
+
 **Why I chose this poem:**
 ```
 [2-3 sentences explaining why this poem appeals to you and why it will work well for a website project. Consider both personal connection and practical factors like structure, length, and visual potential.]
@@ -63,56 +68,31 @@ Based on my AI conversations, here are my simple design guidelines:
 - Mobile: [1-2 key adjustments for small screens]
 - Desktop: [How it will look on larger screens]
 
-## Key AI conversations
+## Key AI conversations and discoveries
 
-Include 2-3 screenshots or brief summaries of your most helpful AI conversations:
-
-### Conversation 1: [Brief title, e.g., "Poem discovery"]
-**My prompt:** 
+### What worked well
+**Best prompt and response:**
 ```
-[The prompt you used]
+[Your most effective prompt]
 ```
 
-**AI's best suggestion:**
+**Why this worked:**
 ```
-[Key points from AI's response]
-```
-
-**What I took from this:**
-```
-[What you decided to use or modify]
+[1-2 sentences on what made this effective]
 ```
 
-### Conversation 2: [Brief title, e.g., "HTML structure help"]
-**My prompt:**
+### What surprised you
+**An AI limitation you discovered:**
 ```
-[The prompt you used]
-```
-
-**AI's best suggestion:**
-```
-[Key points from AI's response]
+[Example: AI only suggested male poets until I specifically asked for women authors]
+[Example: AI forgot my poem choice when I started a new conversation]
+[Example: AI gave incorrect information about...]
+[Example: AI suggested something unnecessarily complex when...]
 ```
 
-**What I took from this:**
+**How you worked around it:**
 ```
-[What you decided to use or modify]
-```
-
-### Conversation 3: [Brief title, e.g., "Design direction"]
-**My prompt:**
-```
-[The prompt you used]
-```
-
-**AI's best suggestion:**
-```
-[Key points from AI's response]
-```
-
-**What I took from this:**
-```
-[What you decided to use or modify]
+[What you did to get better results]
 ```
 
 ## Ready to build?
