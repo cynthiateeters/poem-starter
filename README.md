@@ -36,12 +36,7 @@ You'll have 4 specifications to complete:
 
 ### Choosing Your Poem
 
-Select any poem you like! Some suggestions:
-
-- A classic poem from public domain
-- Song lyrics (with attribution)
-- A poem you've written yourself
-- A poem in another language (with translation)
+Use the Poem from the Poetry Planning assignment
 
 ### Documentation Structure
 
@@ -71,7 +66,7 @@ your-project/
 
 ## Using AI Assistance
 
-You're encouraged to use AI tools (Claude, ChatGPT, Copilot, etc.) to help you! Document all AI interactions in `docs/ai-process-log.md`. Include:
+You're encouraged to use AI tools (Copilot, Claude, ChatGPT, Gemini, etc.) to help you! Document all AI interactions in `docs/ai-process-log.md`. Include:
 
 - The date (YYYY-MM-DD format)
 - What you were trying to accomplish
