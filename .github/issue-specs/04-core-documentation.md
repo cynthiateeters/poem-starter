@@ -5,38 +5,19 @@ labels: required, documentation, status:todo
 
 ## Pass Requirements (All must be checked)
 
-### README.md Content
-- [ ] Project title and description (2+ sentences)
-- [ ] Poem title and author credited
-- [ ] Link to live Netlify deployment
-- [ ] Technologies used section lists HTML, CSS, and any tools
-- [ ] Design decisions section explains at least 2 choices
-
-### Git Practice  
-- [ ] Repository has 8+ meaningful commits
-- [ ] Commit messages describe changes (not "update" or "fix")
-- [ ] Commits show iterative development (not all at once)
-- [ ] Evidence: Screenshot of git log showing commit history
-
-### AI Collaboration Log
-- [ ] ai-process-log.md contains 5+ documented interactions
-- [ ] Each entry dated with ISO format (YYYY-MM-DD)
-- [ ] Each entry includes: Context, Prompt, Result, Modifications
-- [ ] Reflection paragraph on AI effectiveness at end
-
-### Netlify Deployment
-- [ ] Site deployed and accessible via Netlify URL
-- [ ] Custom site name (not random string like "amazing-einstein-123")
-- [ ] All CSS and images load correctly on deployed site
-- [ ] No console errors in browser developer tools
-- [ ] Evidence: Live URL provided and working
-
-### Evidence Location
-- [ ] Save git log screenshot to: `docs/evidence/deployment/`
-- [ ] Save Netlify live site screenshot to: `docs/evidence/deployment/`
+- [ ] project-goals.md exists and addresses this spec area
+- [ ] Deployed to Netlify with custom site name (screenshot required in evidence/ folder)
+- [ ] copilot-collaboration.md complete with agent vs chatbot reflections
+- [ ] Meaningful git commits showing iterative development
 
 ### Status Signal
 When ALL boxes are checked, change label from `status:todo` to `status:ready-for-review`
+
+### Notes
+- The repository and live site are your primary evidence
+- Use GitHub Copilot Agent with @workspace for context-aware assistance
+- Only ONE screenshot required: Live Netlify site
+- Focus on documenting the difference between agent and chatbot modes
 
 ---
 ⚠️ **This is PASS/FAIL** - All boxes must be checked for credit

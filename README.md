@@ -50,29 +50,31 @@ your-project/
 ├── images/                 # Optional images folder
 ├── package.json            # NPM configuration
 ├── .prettierrc             # Prettier config
-├── .htmlhintrc             # HTMLHint config
-├── .stylelintrc.json       # Stylelint config
+├── .htmlhintrc             # Optional HTMLHint config
+├── .stylelintrc.json       # Optional Stylelint config
 ├── .gitignore              # Git ignore file
 ├── README.md               # This file (update it!)
+├── project-goals.md        # Your vision for this project
 │
 └── docs/                   # Documentation folder
-    ├── ai-process-log.md   # Document your AI usage
-    └── evidence/           # Screenshots for proof
-        ├── tooling/        # NPM & linting screenshots
-        ├── validation/     # W3C validator screenshots
-        ├── design/         # Contrast & responsive screenshots
-        └── deployment/     # Git log & Netlify screenshots
+    ├── copilot-collaboration.md  # Document your Copilot usage
+    └── evidence/           # Only 2 screenshots required
 ```
 
 ## Using AI Assistance
 
-You're encouraged to use AI tools (Copilot, Claude, ChatGPT, Gemini, etc.) to help you! Document all AI interactions in `docs/ai-process-log.md`. Include:
+You're encouraged to use GitHub Copilot Agent with @workspace for context-aware assistance! Document all interactions in `docs/copilot-collaboration.md`. Include:
 
 - The date (YYYY-MM-DD format)
 - What you were trying to accomplish
+- Whether you used agent mode (@workspace) or chatbot mode
 - The prompt you used
-- What the AI suggested
+- What Copilot suggested
 - What you actually implemented
+
+### Key Learning: Agent vs Chatbot
+- **Agent mode** (@workspace): Understands your entire project context
+- **Chatbot mode**: Answers isolated questions without project context
 
 ## Deployment Instructions
 
@@ -96,8 +98,9 @@ You're encouraged to use AI tools (Copilot, Claude, ChatGPT, Gemini, etc.) to he
 - CSS3
 - npm
 - Prettier
-- HTMLHint
-- Stylelint
+- HTMLHint (optional)
+- Stylelint (optional)
+- GitHub Copilot Agent
 
 ## Design Decisions
 
@@ -116,16 +119,21 @@ This project is PASS/FAIL. To pass, you must:
 
 - [ ] Complete ALL requirements in ALL 4 specification issues
 - [ ] Check every box in every specification
-- [ ] Provide evidence (screenshots) where requested
+- [ ] Only 2 screenshots required: W3C validation and live Netlify site
 - [ ] Deploy successfully to Netlify
-- [ ] Document your AI collaboration
+- [ ] Document your Copilot collaboration with agent vs chatbot insights
+
+### Evidence Requirements
+Your repository and live site are your primary evidence. Only 2 screenshots required:
+1. W3C validation (0 errors) - in evidence/ folder
+2. Live Netlify site - in evidence/ folder
 
 ## Need Help?
 
 - Review the specification issues carefully
-- Use AI assistants and document the interaction
+- Use GitHub Copilot Agent with @workspace and document the interaction
 - Reach out to your team or instructor
-- Check that all evidence is saved in the correct folders
+- Remember: Your repository and live site are your main evidence
 
 ---
 
