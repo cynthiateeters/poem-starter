@@ -57,3 +57,32 @@ Students are learning to:
    - Vision achievement assessment
 
 ## Required Project Structure (Simplified)
+
+```
+├── index.html              # Main poem page
+├── css/styles.css          # External stylesheet
+├── package.json            # NPM configuration
+├── .prettierrc             # Prettier config
+├── project-goals.md        # Student's project vision
+├── docs/
+│   ├── copilot-collaboration.md # AI interaction documentation
+│   └── evidence/           # Only 2 screenshots required
+│       ├── w3c-validation.png
+│       └── netlify-deployment.png
+```
+
+## Student Resources
+
+### Getting started with GitHub Copilot Agent
+
+- **copilot-prompts.md** - Starter prompts for each specification with examples using @workspace
+- **copilot-collaboration-template.md** - Template for documenting your AI collaboration process
+- **Sarah Jones Learning Site** - Understanding the difference between AI agents and chatbots
+
+### Key Learning Focus
+
+Students should understand and practice the distinction between:
+- **Agent mode** (@workspace): Context-aware assistance that can see project-goals.md and entire project
+- **Chatbot mode**: Quick syntax/definition questions without project context
+
+The @workspace feature allows Copilot to provide suggestions that align with the student's documented vision in project-goals.md, making the AI assistance more valuable and targeted.

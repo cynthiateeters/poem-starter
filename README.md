@@ -44,37 +44,32 @@ Your project should follow this structure:
 
 ```
 your-project/
+├── project-goals.md        # Your vision from the discussion assignment
 ├── index.html              # Your poem page
 ├── css/                    # Styles folder
 │   └── styles.css          # Your styles
-├── images/                 # Optional images folder
 ├── package.json            # NPM configuration
 ├── .prettierrc             # Prettier config
-├── .htmlhintrc             # Optional HTMLHint config
-├── .stylelintrc.json       # Optional Stylelint config
 ├── .gitignore              # Git ignore file
 ├── README.md               # This file (update it!)
-├── project-goals.md        # Your vision for this project
-│
+├── copilot-collaboration.md # Your AI collaboration log
 └── docs/                   # Documentation folder
-    ├── copilot-collaboration.md  # Document your Copilot usage
-    └── evidence/           # Only 2 screenshots required
+    └── evidence/           # Only 2 screenshots required:
+        ├── w3c-validation.png
+        └── netlify-live.png
 ```
 
-## Using AI Assistance
+## Using GitHub Copilot
 
-You're encouraged to use GitHub Copilot Agent with @workspace for context-aware assistance! Document all interactions in `docs/copilot-collaboration.md`. Include:
+You're encouraged to use GitHub Copilot's three modes to help you learn and build:
 
-- The date (YYYY-MM-DD format)
-- What you were trying to accomplish
-- Whether you used agent mode (@workspace) or chatbot mode
-- The prompt you used
-- What Copilot suggested
-- What you actually implemented
+- **Ask Mode** - For understanding concepts and planning (uses fewer tokens)
+- **Agent Mode** - For building features and generating code (uses more tokens)
+- **Edit Mode** - For modifying existing code across files
 
-### Key Learning: Agent vs Chatbot
-- **Agent mode** (@workspace): Understands your entire project context
-- **Chatbot mode**: Answers isolated questions without project context
+Document your experience in `copilot-collaboration.md` using the template provided in `copilot-collaboration-template.md`. Keep it simple - just 3-5 key interactions showing which mode you used and what you learned.
+
+Reference your files using `#file:` syntax (e.g., `#file:project-goals.md`) to give Copilot context about your specific project.
 
 ## Deployment Instructions
 
@@ -98,9 +93,7 @@ You're encouraged to use GitHub Copilot Agent with @workspace for context-aware 
 - CSS3
 - npm
 - Prettier
-- HTMLHint (optional)
-- Stylelint (optional)
-- GitHub Copilot Agent
+- GitHub Copilot (Ask, Agent, and Edit modes)
 
 ## Design Decisions
 
@@ -119,19 +112,19 @@ This project is PASS/FAIL. To pass, you must:
 
 - [ ] Complete ALL requirements in ALL 4 specification issues
 - [ ] Check every box in every specification
-- [ ] Only 2 screenshots required: W3C validation and live Netlify site
-- [ ] Deploy successfully to Netlify
-- [ ] Document your Copilot collaboration with agent vs chatbot insights
+- [ ] Provide exactly 2 screenshots in docs/evidence/
+- [ ] Deploy successfully to Netlify with a custom name
+- [ ] Complete copilot-collaboration.md using the template (3-5 interactions)
 
 ### Evidence Requirements
-Your repository and live site are your primary evidence. Only 2 screenshots required:
-1. W3C validation (0 errors) - in evidence/ folder
-2. Live Netlify site - in evidence/ folder
+Your repository and live site are your primary evidence. Only 2 screenshots required in `docs/evidence/`:
+1. **w3c-validation.png** - W3C validator showing 0 errors (Spec 2)
+2. **netlify-live.png** - Your deployed site (Spec 4)
 
 ## Need Help?
 
 - Review the specification issues carefully
-- Use GitHub Copilot Agent with @workspace and document the interaction
+- Use GitHub Copilot (try Ask mode for understanding, Agent mode for building)
 - Reach out to your team or instructor
 - Remember: Your repository and live site are your main evidence
 
