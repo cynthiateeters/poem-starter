@@ -21,7 +21,7 @@ You'll create a beautiful webpage displaying a poem of your choice, using modern
 
 You'll have 4 specifications to complete:
 
-1. **Professional Tooling Setup** - Set up npm, Prettier, and linters
+1. **Professional Tooling Setup** - Set up npm and Prettier (see `docs/prettier-guide.md` for what Prettier does)
 2. **Semantic HTML Structure** - Create accessible, semantic HTML
 3. **CSS Typography & Layout** - Design a beautiful, responsive layout
 4. **Documentation & Deployment** - Document your work and deploy to Netlify
@@ -67,7 +67,9 @@ You're encouraged to use GitHub Copilot's three modes to help you learn and buil
 - **Agent Mode** - For building features and generating code (uses more tokens)
 - **Edit Mode** - For modifying existing code across files
 
-Document your experience in `copilot-collaboration.md` using the template provided in `copilot-collaboration-template.md`. Keep it simple - just 3-5 key interactions showing which mode you used and what you learned.
+📚 **Need help with prompts?** Check out `docs/copilot-prompts.md` for specific prompts and examples for each specification!
+
+Document your experience in `copilot-collaboration.md` using the template provided in `docs/copilot-collaboration-template.md`. Keep it simple - just 3-5 key interactions showing which mode you used and what you learned.
 
 Reference your files using `#file:` syntax (e.g., `#file:project-goals.md`) to give Copilot context about your specific project.
 
@@ -92,7 +94,7 @@ Reference your files using `#file:` syntax (e.g., `#file:project-goals.md`) to g
 - HTML5
 - CSS3
 - npm
-- Prettier
+- Prettier (see `docs/prettier-guide.md` for details)
 - GitHub Copilot (Ask, Agent, and Edit modes)
 
 ## Design Decisions
@@ -117,7 +119,9 @@ This project is PASS/FAIL. To pass, you must:
 - [ ] Complete copilot-collaboration.md using the template (3-5 interactions)
 
 ### Evidence Requirements
+
 Your repository and live site are your primary evidence. Only 2 screenshots required in `docs/evidence/`:
+
 1. **w3c-validation.png** - W3C validator showing 0 errors (Spec 2)
 2. **netlify-live.png** - Your deployed site (Spec 4)
 
