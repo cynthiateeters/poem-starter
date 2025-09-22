@@ -44,17 +44,20 @@ Your project should follow this structure:
 
 ```
 your-project/
-├── project-goals.md        # Your vision from the discussion assignment
-├── index.html              # Your poem page
-├── css/                    # Styles folder
-│   └── styles.css          # Your styles
-├── package.json            # NPM configuration
-├── .prettierrc             # Prettier config
-├── .gitignore              # Git ignore file
-├── README.md               # This file (update it!)
-├── copilot-collaboration.md # Your AI collaboration log
-└── docs/                   # Documentation folder
-    └── evidence/           # Only 2 screenshots required:
+├── project-goals.md                    # Your vision from the discussion assignment
+├── index.html                          # Your poem page
+├── css/                                # Styles folder
+│   └── styles.css                      # Your styles
+├── package.json                        # NPM configuration
+├── .prettierrc                         # Prettier config
+├── .gitignore                          # Git ignore file
+├── README.md                           # This file (update it!)
+├── copilot-collaboration.md            # Your AI collaboration log
+└── docs/                               # Documentation folder
+    ├── copilot-prompts.md              # Helpful prompts for each specification
+    ├── copilot-collaboration-template.md # Template for documenting AI work
+    ├── prettier-guide.md               # What Prettier does and why it helps
+    └── evidence/                       # Only 2 screenshots required:
         ├── w3c-validation.png
         └── netlify-live.png
 ```
